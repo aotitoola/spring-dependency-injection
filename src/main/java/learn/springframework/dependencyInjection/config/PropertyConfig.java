@@ -19,8 +19,8 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 @PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
+        @PropertySource("classpath:datasource.properties")
+//        @PropertySource("classpath:jms.properties")
 })
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
 public class PropertyConfig {

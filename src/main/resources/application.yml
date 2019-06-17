@@ -1,0 +1,14 @@
+# spring boot looks for yaml files starting with application.yml
+
+learn:
+  jms:
+    username: JMS Username
+    password: userPass
+    url: sampleURL
+
+---
+spring:
+  profiles: de
+learn:
+  jms:
+    username: JMS Username**In**German

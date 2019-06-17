@@ -1,0 +1,38 @@
+# this is a comment
+# used to describe data structures
+
+name: John
+names:  # an inline comment
+  - John
+  - Paul
+  - Rango
+  - Tekashi
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: Random House
+
+# evaluates to boolean
+truth: yes
+another_truth: True
+more_true: true
+false: no # No, false, FALSE
+
+# Strings
+string_val: "This is a quote"
+colon_string: "my courses: one two three"
+
+# multiple line characters
+# pipe character says read in everything
+include_new_lines: |
+  this is a new line
+  this too
+  and this please
+
+# new lines get dropped
+ignore_new_lines: >
+  this is
+  just one long
+  String
