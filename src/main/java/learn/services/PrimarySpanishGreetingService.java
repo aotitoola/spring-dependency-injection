@@ -1,12 +1,13 @@
 package learn.services;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
+/**
+ * @author Aanuoluwa Otitoola
+ * @since 16/06/2019 Sun
+ */
 
-@Service
-@Primary
-@Profile("es")
+//@Service
+//@Primary
+//@Profile("es")
 public class PrimarySpanishGreetingService implements GreetingService{
 
     private GreetingRepository greetingRepository;

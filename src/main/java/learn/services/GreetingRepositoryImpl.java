@@ -1,7 +1,6 @@
 package learn.services;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author Aanuoluwa Otitoola
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Repository;
  */
 
 @Component
-public class GreetingRepositoryImpl implements GreetingRepository{
+public class GreetingRepositoryImpl implements GreetingRepository {
 
     @Override
     public String getEnglishGreeting() {

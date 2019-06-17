@@ -4,6 +4,8 @@ import learn.springframework.dependencyInjection.controllers.ConstructorInjected
 import learn.springframework.dependencyInjection.controllers.MyController;
 import learn.springframework.dependencyInjection.controllers.PropertyInjectedController;
 import learn.springframework.dependencyInjection.controllers.SetterInjectedController;
+import learn.springframework.dependencyInjection.exampleBeans.FakeDataSource;
+import learn.springframework.dependencyInjection.exampleBeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,9 +18,13 @@ public class DependencyInjectionApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
         MyController controller = (MyController) ctx.getBean("myController");
-//        FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
-//
-//        System.out.println(fakeDataSource.getUser());
+
+        FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+        System.out.println(fakeDataSource.getUser());
+        System.out.println(fakeDataSource.getUrl());
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker.getUserName());
 
         controller.hello();
 

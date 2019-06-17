@@ -1,18 +1,21 @@
 package learn.springframework.dependencyInjection.exampleBeans;
 
+/**
+ * @author Aanuoluwa Otitoola
+ * @since 17/06/2019 Mon
+ */
+public class FakeJmsBroker {
 
-public class FakeDataSource {
-
-    private String user;
+    private String userName;
     private String password;
     private String url;
 
-    public String getUser() {
-        return user;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {

@@ -1,6 +1,11 @@
 package learn.services;
-import learn.springframework.dependencyInjection.controllers.MyController;
+
 import org.springframework.stereotype.Service;
+
+/**
+ * @author Aanuoluwa Otitoola
+ * @since 16/06/2019 Sun
+ */
 
 @Service
 public class GreetingServiceImpl implements GreetingService {
